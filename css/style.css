@@ -9,7 +9,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* banner style start */
+/* banner styles start */
 .banner{
     background-color: #2D25A0;
 }
@@ -53,9 +53,9 @@ h1{
     font-size: 16px;
     padding: 10px 24px 10px 24px;    
 }
-/* banner style end */
+/* banner styles end */
 
-/* Players style  */
+/* Players styles start */
 .players{
     width: 70%;
     margin:auto;
@@ -87,11 +87,10 @@ h1{
     font-size: 16px;
     line-height: 26px;
 }
-/* Players style end  */
+/* Players styles end  */
 
 
-/* logo style start  */
-
+/* logo styles start  */
 .logo-img{
     width: 40%;
     margin: auto;
@@ -101,13 +100,12 @@ h1{
 .logo-img img{
     width: 100%;
 }
-/* logo style end  */
+/* logo styles end  */
 
-/* team style  */
+/* team styles start  */
 .team-info{
     margin-top: 80px;
 }
-
 .team-info h1 , .gallery h1{
     color: #2D25A0;
     text-align: center;   
@@ -145,10 +143,10 @@ h1{
     text-decoration: none;
     color: aliceblue;
 }
-/* team style end */
+/* team styles end */
 
 
-/* gallery  start*/
+/* gallery  styles start*/
 .gallery{
     margin-top: 80px;
 }
@@ -173,10 +171,10 @@ h1{
     transform: scale(1.5);
     transition: transform 2s ease-in-out;
 }
-/* gallery  end */
+/* gallery styles end */
 
 
-/* Footer style start */
+/* Footer styles start */
 .social-media{
     width: 40%;
     margin: auto;
@@ -199,12 +197,12 @@ h1{
     margin-top: 0px;
     margin-bottom: 63px;
 }
-/* Footer style end */
+/* Footer styles end */
 
 
-/* media query  */
+/* >>>>>>>> Media query <<<<<<<< */
 
-/* for iPads, Tablets */
+/* ----------For iPads, Tablets----------- */
 
 @media only screen and (min-width:700px) and (max-width:900px) {
 
@@ -227,13 +225,13 @@ h1{
         grid-template-columns: repeat(2,1fr);
     
         }
-        /* team part  */
+    /* team part  */
         .team{
             display: grid;
             grid-template-columns: repeat(3,1fr);
             grid-row-gap: 50px;
         }
-        /* gallery part  */
+    /* gallery part  */
         .photos{
             display: grid;
             grid-template-columns: repeat(2,1fr);
@@ -244,7 +242,7 @@ h1{
 }
 }
     
-/* For mobile screen  */
+/* -------For small or mobile screen-------  */
 
 @media only screen and (max-width:700px){
     
@@ -298,7 +296,6 @@ h1{
     /* logo style  */
     .logo-img{
         width: 60%;
-
     }
 
     /* footer  */
