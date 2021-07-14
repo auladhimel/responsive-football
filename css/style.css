@@ -107,30 +107,7 @@ h1{
 .logo-img img{
     width: 100%;
 }
-/* Footer style  */
-.social-media{
-    width: 40%;
-    margin: auto;
-    text-align: center;    
-}
-.social-media i{
-    background-color: #dadbdd;
-    border-radius: 20px;
-    padding: 8px 8px 8px 8px;
-    font-size: 22px;
-    text-align: center;
-    color: #969BAB;
-    margin-left: 7px;
-    margin-right: 7px;
-    margin-bottom: 20px;
-}
-.social-media p{
-    text-align: center;
-    font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 63px;
 
-}
 /* team style  */
 .team-info{
     margin-top: 80px;
@@ -206,3 +183,110 @@ h1{
     transform: scale(1.5);
     transition: transform 2s ease-in-out;
 }
+/* Footer style  */
+.social-media{
+    width: 40%;
+    margin: auto;
+    text-align: center;    
+}
+.social-media i{
+    background-color: #dadbdd;
+    border-radius: 20px;
+    padding: 8px 8px 8px 8px;
+    font-size: 22px;
+    text-align: center;
+    color: #969BAB;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 20px;
+}
+.social-media p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 63px;
+
+}
+
+/* media query  */
+
+@media only screen and (max-width:688px){
+    
+    /* banner part  */
+    .banner-section{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        text-align: left;
+        align-items: center
+                 
+    }
+    .banner-tag{
+        width: 50%;
+        margin-right: 80px;
+    }
+
+    .banner-img{
+        margin-top: 50px;
+        width: 329px;
+        height: 259.17px;
+    }
+    h1{
+        
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 26px;
+        
+    }
+    /* players part  */
+    .player{     
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .team{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-row-gap: 50px;
+    }
+    .about a {
+        
+        font-size: 10px;
+    
+    }
+    .about{
+        padding: 3px 5px 3px 5px;
+    }
+  
+    /* gallery  */
+    .photos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* logo style  */
+    .logo-img{
+        width: 60%;
+
+    }
+    /* footer  */
+    .social-media{
+        width: 100%;
+    }
+    .social-media p{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+    .social-media i{   
+        padding: 5px 5px 5px 5px;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 4px;
+
+}
+
+
+
