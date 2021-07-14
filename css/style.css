@@ -210,7 +210,49 @@ h1{
 
 /* media query  */
 
-@media only screen and (max-width:688px){
+/* for tablet  */
+@media only screen and (min-width:700px) and (max-width:900px) {
+    /* banner part  */
+    .banner-img{
+        margin-top: 100px;
+        width: 100%;
+        
+    }
+    .banner-img img{
+        width: 100%; 
+        margin-left: 60px; 
+          
+    }
+    .banner-tag{
+        width: 40%;
+        margin-top: 30px;
+    }
+    /* player part  */
+    .player{     
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    
+        }
+        /* team part  */
+        .team{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-row-gap: 50px;
+        }
+        /* gallery part  */
+        .photos{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            margin: auto;
+            width: 80%;
+}
+}
+    
+/* For mobile screen  */
+
+@media only screen and (max-width:600px){
     
     /* banner part  */
     .banner-section{
@@ -218,7 +260,7 @@ h1{
         flex-direction: column;
         width: 90%;
         text-align: left;
-        align-items: center
+        align-items: center;
                  
     }
     .banner-tag{
@@ -287,6 +329,4 @@ h1{
         margin-bottom: 4px;
 
 }
-
-
-
+}
