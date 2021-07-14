@@ -16,7 +16,6 @@ body{
 .banner-section{
     width: 70%;
     display: flex;
-    border: 1px solid red;
     margin-left: auto;
     margin-right: auto;
     padding-top: 80px; 
@@ -33,6 +32,12 @@ body{
 .banner-img{
     width: 60%;
 }
+.banner:hover img{
+    width: 100%;
+    transform: scale(1.2);
+    transform: rotate(50deg);
+    transition: width 1s , transform 2s ease-in-out;
+}
 h1{
     color: white;
     text-decoration: none;
@@ -43,20 +48,21 @@ h1{
     margin-bottom: 26px;
     
 }
-a{   
+.banner-tag a{   
     color: white;
     text-decoration: none;
     background-color: #E02C6D;
     font-size: 16px;
     padding: 10px 24px 10px 24px;
+
     
 }
+
 /* Players style  */
 
 .players{
     width: 70%;
     margin:auto;
-    border: 1px solid tomato;
     margin-top: 70px;
     
 }
@@ -72,8 +78,16 @@ a{
     margin-bottom: 27px;
     
 }
+.player-img{
+    overflow: hidden;
+}
 .player-img img{
     width: 100%;
+    
+}
+.player-img:hover img{
+        transform: scale(1.3);
+        transition: transform 1s ease-in-out;
 }
 .player-info p{
     color: #6C6C6C;
@@ -95,7 +109,6 @@ a{
 }
 /* Footer style  */
 .social-media{
-    border: 1px solid red;
     width: 40%;
     margin: auto;
     text-align: center;    
@@ -119,11 +132,77 @@ a{
 
 }
 /* team style  */
-.team-info h1{
-    color: black;
+.team-info{
+    margin-top: 80px;
+}
+
+.team-info h1 , .gallery h1{
+    color: #2D25A0;
+    text-align: center;
+    
     
 }
 .team{
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    grid-row-gap: 50px;
+    
+    
+}
+.teams{
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 30px 2px #dddcdc;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.individual-team img{
+    width: 100%;
+}
+.individual-team:hover img{
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+.about{
+    margin: auto;
+    color: white;
+    text-align: center;
+    text-decoration: none; 
+    background-color: #E02C6D;  
+    font-size: 14px;
+    padding: 10px 15px 10px 15px;
+    width: 50%;
+    
+}
+.about a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/* gallery  */
+.gallery{
+    margin-top: 80px;
+
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin: auto;
+    width: 80%;
+    
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; 
+}
+
+.photo{
+    box-shadow:0px 0px 10px 2px #bebcbc;
+    overflow: hidden;
+}
+.photo:hover img{
+    transform: scale(1.5);
+    transition: transform 2s ease-in-out;
 }
